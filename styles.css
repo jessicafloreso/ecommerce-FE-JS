@@ -247,4 +247,95 @@ header h1 {
     z-index: 1000; /* Ensure it's on top of other content */
     overflow-y: auto; /* Enable scrolling if content exceeds cart height */
   }
+  /* Update the profile options container */
+
   
+  /* Update the profile options container */
+.profile-options {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Adjust the width as needed */
+    width: 250px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+/* Show the profile options */
+.profile-options.active {
+    right: 0;
+}
+
+/* Profile Section Styling */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#auth-options button,
+#user-info span,
+#user-info button {
+    margin-right: 10px;
+}
+
+#user-info span {
+    font-weight: bold;
+}
+
+#user-info button {
+    background-color: #c0cdb5;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Initially show the registration and login forms */
+#login-content,
+#register-content {
+    display: block;
+}
+
+/* Show/hide the logout options based on login status */
+#logout-aside.logged-in {
+    display: block;
+}
+
+/* Initially hide the logout options */
+#logout-aside {
+    display: none;
+}
+
+/* Hide the inactive form */
+#show-login-button.active ~ #register-content,
+#show-register-button.active ~ #login-content {
+    display: none;
+}
+/* Style the close button *//* Add this CSS for the close button and profile options */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.profile-options {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hide it off the screen */
+    width: 300px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 9999; /* Ensure it's above other elements */
+    overflow-y: auto; /* Add scrollbar for overflow content */
+}
+
