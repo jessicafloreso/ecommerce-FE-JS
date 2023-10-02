@@ -1,0 +1,250 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #c0cdb5;
+}
+
+/* Header styles */
+header {
+    background-color: white;
+    color: #274e2f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styling for the header */
+header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Add your desired background color */
+    z-index: 100; /* To ensure it's above other content */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+  }
+  
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #274e2f;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+/* ... Previous styles ... */
+
+/* Navbar logo and title styles */
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px; /* Add some space below the logo on smaller screens */
+}
+
+.navbar-menu-item {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu-item:hover {
+    color: #1c782e;
+}
+
+/* Navbar icons styles */
+.navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px; /* Add some space below the logo on smaller screens */
+}
+
+/* .navbar-icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+} */
+/* Remove underline from specific anchor elements */
+.navbar-icon {
+    text-decoration: none;
+    color: #274e2f; /* Adjust the color to match your design */
+}
+
+/* Add hover effect */
+.navbar-icon :hover {
+    color: #1c782e; /* Change the color on hover */
+}
+
+
+.icon-label {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Call to Action (CTA) button */
+.cta-button {
+    display: inline-block;
+    background-color:  #274e2f;;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1c782e;
+}
+
+/* Responsive media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar-logo {
+        font-size: 1.5rem; /* Decrease the logo size on smaller screens */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Stack menu items vertically */
+        text-align: center;
+    }
+
+    .navbar-menu-item {
+        margin: 5px 0; /* Add spacing between menu items */
+    }
+
+    .navbar-icons {
+        flex-direction: column; /* Stack icons and labels vertically */
+        text-align: center;
+    }
+
+    .navbar-logo-container {
+        margin-bottom: 10px; /* Add spacing below the logo and title */
+    }
+}
+/* Styles for the shopping cart */
+.shopping-cart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* CSS in styles.css */
+/* Set a fixed size for product card images */
+
+.product-image img{
+    max-width: 150px; /* Set your desired width */
+    height: auto; /* Set your desired height */
+    object-fit: cover; /* Maintain aspect ratio and crop as needed */
+    border: 1px solid #ddd; /* Optional: Add a border for a neat look */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #f2f2f2; /* Light grey background color */
+    border-radius: 10px; /* Rounded borders */
+    margin: 10px; /* Add spacing between cards */
+    padding: 10px; /* Add internal padding */
+    text-align: center; /* Center content horizontally */
+    display: inline-block; /* Display cards in rows and columns */
+    vertical-align: top; /* Align cards to the top within a row */
+    width: calc(25% - 20px); /* Set a fixed width for a 4-column layout */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+/* Style the product images within the cards */
+.product-image {
+    height: 200px; /* Set a fixed height for the images */
+    overflow: hidden; /* Hide any overflowing content (images) */
+}
+
+/* Adjust card width for smaller screens */
+@media screen and (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px); /* Set a 2-column layout for smaller screens */
+    }
+}
+
+
+/* CSS for shopping cart */
+.shopping-cart {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initial position outside the viewport */
+    width: 300px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: white;
+    transition: right 0.3s; /* Add a transition for smooth sliding animation */
+    z-index: 1000; /* Ensure it's on top of other content */
+    overflow-y: auto; /* Enable scrolling if content exceeds cart height */
+  }
+  

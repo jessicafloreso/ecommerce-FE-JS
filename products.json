@@ -1,0 +1,91 @@
+[
+    {
+        "id": 1,
+        "name": "Monstera Deliciosa",
+        "price": 25.99,
+        "image": "./plant-images/monstera.jpg",
+        "description": "A popular houseplant with beautiful split leaves.",
+        "quantity": 28
+    },
+    {
+        "id": 2,
+        "name": "Snake Plant",
+        "price": 19.99,
+        "image": "./plant-images/snake-plant.jpg",
+        "description": "Low-maintenance plant with tall, striking leaves.",
+        "quantity": 20
+    },
+    {
+        "id": 4,
+        "name": "Fiddle Leaf Fig",
+        "price": 39.99,
+        "image": "./plant-images/fiddle-leaf-fig.jpg",
+        "description": "Tall indoor tree with violin-shaped leaves.",
+        "quantity": 10
+    },
+    {
+        "id": 5,
+        "name": "Spider Plant",
+        "price": 14.99,
+        "image": "./plant-images/spider-plant.jpg",
+        "description": "Air-purifying plant with long, arching leaves.",
+        "quantity": 25
+    },
+    {
+        "id": 6,
+        "name": "Succulent Collection",
+        "price": 24.99,
+        "image": "./plant-images/succulent-collection.jpg",
+        "description": "Assortment of small, easy-care succulents.",
+        "quantity": 30
+    },
+    {
+        "id": 7,
+        "name": "Peace Lily",
+        "price": 16.99,
+        "image": "./plant-images/peace-lily.jpg",
+        "description": "Elegant plant with white spathes and glossy leaves.",
+        "quantity": 18
+    },
+    {
+        "id": 8,
+        "name": "Rubber Plant",
+        "price": 21.99,
+        "image": "./plant-images/rubber-plant.jpg",
+        "description": "Indoor tree with dark green, rubbery leaves.",
+        "quantity": 12
+    },
+    {
+        "id": 9,
+        "name": "ZZ Plant",
+        "price": 18.99,
+        "image": "./plant-images/zz-plant.jpg",
+        "description": "Hardy plant with shiny, dark green foliage.",
+        "quantity": 20
+    },
+    {
+        "id": 10,
+        "name": "Aloe Vera",
+        "price": 12.99,
+        "image": "./plant-images/aloe-vera.jpg",
+        "description": "Medicinal plant with succulent leaves.",
+        "quantity": 22
+    },
+    {
+        "id": 11,
+        "name": "Pothos",
+        "price": 14.99,
+        "image": "./plant-images/pothos.jpg",
+        "description": "Vine-like plant with heart-shaped leaves.",
+        "quantity": 18
+    },
+    {
+        "id": 12,
+        "name": "Lavender",
+        "price": 17.99,
+        "image": "./plant-images/lavender.jpg",
+        "description": "Fragrant herb with purple flowers, great for aromatherapy.",
+        "quantity": 15
+    }
+    
+]

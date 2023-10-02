@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturaleza - About Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Additional CSS for the About Us page */
+.about-us {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Product Gallery Styling */
+/* .product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-item {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product-item img {
+    width: auto;
+    height: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+} */
+/* Product Gallery Styling */
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.product-item {
+    width: calc(33.33% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-image-wrapper {
+    /* Set a fixed size for the image container */
+    width: 100%;
+    padding-top: 100%; /* Maintain a 1:1 aspect ratio (square) */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item img {
+    /* Position the image absolutely within the container */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.product-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Product Carousel Styling */
+.product-carousel {
+    display: flex;
+    overflow: hidden;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item {
+    flex: 0 0 calc(25% - 20px); /* Adjust the width as needed */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.carousel-item h3.product-name {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #333;
+    margin-top: 10px;
+}
+
+.scroll-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: auto;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 70px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: rgba(12, 96, 12, 0.798);
+}
+
+.scroll-button:hover {
+    background-color: #ddd;
+}
+
+/* Add margin to the page content */
+.container {
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    padding: 0 20px;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container navbar-container">
+                <div class="navbar-logo-container">
+                <img src="./images/logo-plain.png" alt="Naturaleza" class="navbar-logo">
+                <a href="#" class="navbar-title">Naturaleza</a>
+            </div>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-menu-item">Home</a></li>
+                    <li><a href="#product-list" class="navbar-menu-item">Shop</a></li>
+                    <li><a href="about-us.html" class="navbar-menu-item">About Us</a></li>
+                </ul>
+                <div class="navbar-icons">
+                    <a href="#shopping-cart" class="navbar-icon">
+                        <i class="fas fa-shopping-cart" style="color: #c0cdb5"></i>
+                        <span class="icon-label" >Cart</span>
+                    </a>
+                    <a href="#" class="navbar-icon">
+                        <i class="fa-solid fa-user" style="color: #c0cdb5"></i>
+                        <span class="icon-label">Profile</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <div class="container">
+            <h2>About Naturaleza</h2>
+        <p>Welcome to Naturaleza, your one-stop destination for all things green and natural. We are passionate about bringing the beauty of nature into your home, and our mission is to provide you with the finest selection of indoor plants and natural products to create a healthier and more vibrant living space.</p>
+
+        <p>Our journey began with a simple idea: to connect people with the natural world and promote sustainable living. Whether you're a seasoned plant enthusiast or just starting your green journey, we have something for everyone. Our carefully curated collection of indoor plants includes a wide range of species, from low-maintenance succulents to elegant peace lilies and vibrant snake plants.</p>
+
+        <p>At Naturaleza, we believe that surrounding yourself with nature can have a positive impact on your well-being. Plants not only add beauty to your surroundings but also purify the air and reduce stress. We are committed to helping you create a green oasis in your home or office.</p>
+
+        <p>But Naturaleza is more than just a plant shop. We also offer a selection of natural and eco-friendly products to complement your green lifestyle. From organic skincare products to sustainable home decor, we aim to provide you with options that align with your values.</p>
+
+        <p>Thank you for choosing Naturaleza as your partner in bringing nature closer to you. Join us in our mission to make the world a greener and more sustainable place, one plant at a time.</p>
+            <!-- Product Carousel -->
+            <section class="product-gallery">
+                <div class="product-carousel">
+                    <div class="scroll-button prev-button" onclick="scrollCarousel('prev')">‹</div>
+                    <div class="carousel-container">
+                        <!-- Product items dynamically generated from products.json -->
+                        <!-- JavaScript will populate this section -->
+                    </div>
+                    <div class="scroll-button next-button" onclick="scrollCarousel('next')">›</div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+
+    <footer>
+        <!-- Your footer content here -->
+    </footer>
+
+    <script>
+        // JavaScript for loading product data and generating the gallery
+        fetch('./products.json')
+            .then(response => response.json())
+            .then(data => {
+                const productCarousel = document.querySelector('.carousel-container');
+                data.forEach(product => {
+                    const productItem = document.createElement('div');
+                    productItem.classList.add('carousel-item');
+                    productItem.innerHTML = `
+                        <img src="${product.image}" alt="${product.name}">
+                        <h3 class="product-name">${product.name}</h3>
+                    `;
+                    productItem.addEventListener('click', () => redirectToProduct(product.id));
+                    productCarousel.appendChild(productItem);
+                });
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+
+        // JavaScript function to redirect to a specific product in the index.html page
+        function redirectToProduct(productId) {
+            window.location.href = `index.html#product${productId}`;
+        }
+
+        // JavaScript function to scroll the product carousel
+        let carouselIndex = 0;
+        const itemsPerPage = 3;
+
+        function scrollCarousel(direction) {
+            const carousel = document.querySelector('.carousel-container');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+
+            if (direction === 'next') {
+                carouselIndex = Math.min(carouselIndex + itemsPerPage, carouselItems.length - itemsPerPage);
+            } else if (direction === 'prev') {
+                carouselIndex = Math.max(carouselIndex - itemsPerPage, 0);
+            }
+
+            const translateX = -carouselIndex * (100 / itemsPerPage);
+            carousel.style.transform = `translateX(${translateX}%)`;
+        }
+    </script>
+</body>
+</html>

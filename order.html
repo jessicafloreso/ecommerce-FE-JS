@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container navbar-container">
+                <div class="navbar-logo-container">
+                <img src="./images/logo-plain.png" alt="Naturaleza" class="navbar-logo">
+                <a href="#" class="navbar-title">Naturaleza</a>
+            </div>
+                <ul class="navbar-menu">
+                    <li><a href="index.html" class="navbar-menu-item">Home</a></li>
+                    <li><a href="#product-list" class="navbar-menu-item">Shop</a></li>
+                    <li><a href="about-us.html" class="navbar-menu-item">About Us</a></li>
+                </ul>
+                <div class="navbar-icons">
+                    <a href="#shopping-cart" class="navbar-icon">
+                        <i class="fas fa-shopping-cart" style="color: #c0cdb5"></i>
+                        <span class="icon-label" >Cart</span>
+                    </a>
+                    <a href="#" class="navbar-icon">
+                        <i class="fa-solid fa-user" style="color: #c0cdb5"></i>
+                        <span class="icon-label">Profile</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <ul class="cart-summary">
+                <!-- Cart summary will be displayed here -->
+            </ul>
+        </section>
+
+        <section class="payment-form">
+            <h2>Payment Details</h2>
+            <form id="payment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <!-- Payment form fields here (e.g., card number, expiration date, CVV) -->
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+                <!-- Add more payment info fields as needed -->
+
+                <button type="submit">Submit Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+    <script src="order.js"></script> <!-- Create a new JavaScript file for this page -->
+</body>
+</html>
+
+
